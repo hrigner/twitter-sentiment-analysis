@@ -1,0 +1,56 @@
+html,
+body {
+  margin: 0;
+  font-family: "Muli";
+  height: 100vh;
+  user-select: none;
+  overflow: hidden;
+}
+
+.picasso-chart {
+  position: relative;
+  width: 50%;
+  height: 50%;
+}
+
+#index {
+  height: 100%;
+}
+
+.page {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  margin-top: 50px;
+  height: calc(100vh - 50px);
+}
+
+.dataContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.errorWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: #92bdd3;
+  color: #fff;
+  text-align: center;
+}
+
+.errorText {
+  font-size: 31px;
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 375px) {
+  .picasso-chart {
+    height: 70%;
+  }
+}
